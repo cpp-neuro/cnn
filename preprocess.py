@@ -48,6 +48,14 @@ def configure():
 	graph_dir     = os.path.join(cwd, graph_dir)
 	processed_dir = os.path.join(cwd, processed_dir)
 
+	# if necessary directories don't exist, make them
+	if not os.path.isdir(data_dir):
+		os.mkdir(data_dir)
+	if not os.path.isdir(graph_dir):
+		os.mkdir(graph_dir)
+	if not os.path.isdir(processed_dir):
+		os.mkdir(processed_dir)
+
 def get_filepaths():
 	global data_dir
 	
@@ -116,3 +124,5 @@ if __name__ == "__main__":
 	
 		outfile = get_csvpath(fp)
 		save_csv(raw, outfile)
+
+	print("Total Preprocessed Files: {}".format(len(filepaths)))
