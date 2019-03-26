@@ -1,0 +1,10 @@
+March 26, 2019
+
+	Questions:
+		How much computing power will ICA take and what benefit will it bring us?
+		How much data do we need for our model?
+	
+	Tasks
+		Kumar: Working with SciKitLearn
+		Joey:  K Nearest Neighbor and CSV Files
+		Tejas: SVM classifer
